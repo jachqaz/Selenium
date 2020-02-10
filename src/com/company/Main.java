@@ -21,8 +21,10 @@ public class Main {
 //        driver.quit();
 
         driver.get("http://facebook.com");
-        driver.findElement(By.id("email")).sendKeys("jach_1997@hotmail.com");
-        driver.findElement(By.name("pass")).sendKeys("1234567890 ");
-        driver.findElement(By.linkText("¿Olvidaste tu cuenta?")).click();
+//        driver.findElement(By.id("email")).sendKeys("jach_1997@hotmail.com");
+//        driver.findElement(By.name("pass")).sendKeys("1234567890 ");
+//        driver.findElement(By.linkText("¿Olvidaste tu cuenta?")).click();
+        driver.findElement(By.className("inputtext")).sendKeys("helloworld");
+
     }
 }
