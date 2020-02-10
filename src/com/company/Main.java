@@ -24,7 +24,10 @@ public class Main {
 //        driver.findElement(By.id("email")).sendKeys("jach_1997@hotmail.com");
 //        driver.findElement(By.name("pass")).sendKeys("1234567890 ");
 //        driver.findElement(By.linkText("¿Olvidaste tu cuenta?")).click();
-        driver.findElement(By.className("inputtext")).sendKeys("helloworld");
+//        driver.findElement(By.className("inputtext")).sendKeys("helloworld");
+        driver.findElement(By.cssSelector("#email")).sendKeys("helloworld");
+        driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("pass");
+        driver.findElement(By.xpath("//*[@id='login_form']/table/tbody/tr[3]/td[2]/div/a")).click();
 
     }
 }
