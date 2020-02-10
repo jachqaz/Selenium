@@ -14,6 +14,10 @@ public class Main {
         System.out.println(driver.getCurrentUrl());
         //System.out.println(driver.getPageSource());
         driver.get("http://yahoo.com/");
-        driver.navigate().back();
+//        driver.navigate().back();
+//        driver.navigate().forward();
+        driver.close();
+//        driver.quit();
+
     }
 }
