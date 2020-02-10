@@ -13,7 +13,7 @@ public class Main {
 //        driver.get("http://google.com");
 //        System.out.println(driver.getTitle());
 //        System.out.println(driver.getCurrentUrl());
-        //System.out.println(driver.getPageSource());
+//        System.out.println(driver.getPageSource());
 //        driver.get("http://yahoo.com/");
 //        driver.navigate().back();
 //        driver.navigate().forward();
@@ -22,6 +22,7 @@ public class Main {
 
         driver.get("http://facebook.com");
         driver.findElement(By.id("email")).sendKeys("jach_1997@hotmail.com");
-
+        driver.findElement(By.name("pass")).sendKeys("1234567890 ");
+        driver.findElement(By.linkText("¿Olvidaste tu cuenta?")).click();
     }
 }
