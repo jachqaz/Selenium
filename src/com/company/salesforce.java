@@ -12,6 +12,7 @@ public class salesforce {
         driver.get("https://login.salesforce.com/");
         driver.findElement(By.id("username")).sendKeys("jach_1997@hotmail.com");
         driver.findElement(By.name("pw")).sendKeys("1234567890 ");
-        driver.findElement(By.className("button r4 wide primary")).click();
+//        driver.findElement(By.className("button r4 wide primary")).click();
+        driver.findElement(By.xpath("//*[@id='Login']")).click();
     }
 }
