@@ -14,5 +14,6 @@ public class salesforce {
         driver.findElement(By.name("pw")).sendKeys("1234567890 ");
 //        driver.findElement(By.className("button r4 wide primary")).click();
         driver.findElement(By.xpath("//*[@id='Login']")).click();
+//        System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
     }
 }
